@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imgtool"
+version = "1.0.0"
+description = "一个基于 Pillow 的命令行图片信息查看与简单编辑工具"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10.0",
+]
+
+[project.scripts]
+imgtool = "imgtool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["imgtool*"]
