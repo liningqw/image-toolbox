@@ -14,6 +14,7 @@ dependencies = [
 
 [project.scripts]
 imgtool = "imgtool.cli:main"
+imgtool-gui = "imgtool.gui:main"
 
 [tool.setuptools.packages.find]
 include = ["imgtool*"]
